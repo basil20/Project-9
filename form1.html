@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,39 +25,64 @@
             font-weight: bold;
         }
 
-        input{
+        input {
             width: 490px;
-            height: 30px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        textarea {
+            border-radius: 5px;
         }
 
         button {
             background: purple;
             color: white;
-            border-radius: 3px;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0, 5s ease;
-            margin-left: 45%;
+            width: 500px;
+            height: 40px;
         }
 
         button:hover {
             background-color: blue;
+            color: black;
         }
-
     </style>
 </head>
 
 <body>
 
     <section class="hero">
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-        <form>
-            
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <form method="" action="">
+            <label for="name">Full Names</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="Full Names">
+            <br>
+            <br>
+
+            <label for="email">Email Address</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br>
+            <br>
+
+            <label for="message">Your Message</label>
+            <br>
+            <textarea id="message" placeholder="Type your message here...." rows="10" cols="65"></textarea>
+            <br>
+            <br>
+
+            <button type="submit">Send Message</button>
+
         </form>
-        </section>
-    
+    </section>
+
 </body>
 
 </html>
